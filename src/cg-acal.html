@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CGPAcal - ArP_4_u</title>
+    <meta name="description" content="mini-projects" />
+    <meta property="og:title" content="CGPAcal - ArP_4_u" />
+    <meta property="og:description" content="mini-projects" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/playground_assets/logo-black.svg"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
+      ></script>
+      <link href="./cg-acal.css" rel="stylesheet" />
+
+      <div class="cg-acal-container">
+        <div class="cg-acal-div">
+          <dangerous-html
+            html="<!DOCTYPE html>
+<html>
+<title>Cgpa</title>
+ <body> 
+   <br><br>
+   <h1>Welcome.. calculate your CGPA here 😊😎</h1><br><br>
+   <div class='formC'>
+   <form>
+  &nbsp;&nbsp;&nbsp;Sem 1: <input type='text' value='0' class='tw' size=5 id='s1'>  
+  Sem 2: <input type='text' value='0' class='tw' size=5 id='s2'> <br><br>
+  &nbsp;&nbsp;&nbsp;Sem 3: <input type='text' value='0' class='tw' size=5 id='s3'> 
+  Sem 4: <input type='text' value='0' class='tw' size=5 id='s4'> <br><br>
+  &nbsp;&nbsp;&nbsp;Sem 5: <input type='text' value='0' class='tw' size=5 id='s5'> 
+  Sem 6: <input type='text' value='0' class='tw' size=5 id='s6'> <br><br>
+  &nbsp;&nbsp;&nbsp;Sem 7: <input type='text' value='0' class='tw' size=5 id='s7'> 
+  Sem 8: <input type='text' value='0' class='tw' size=5 id='s8'> <br><br>
+  Total Sems to be Counted: <br><br>
+    <input type='text' size=5 placeholder='(1-8)' id='num' required /> &nbsp;&nbsp;
+    <br>
+   </div>
+   <br><br>
+   <button type='submit' onclick='calc()' class='btnc'>Calculate</button>
+   </form><br>
+   
+   
+  <div class='final'>
+    <h3 id='result'></h3>
+  </div>
+   
+</body>
+<style>
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+form{
+  font-weight: bold;
+  font-size: 30px;
+}
+.formC{
+  text-align: center;
+  left:50%;
+  font-family: Papyrus;
+  margin: auto;
+  width: 50%;
+  border: 6px solid black;
+  padding: 5px;
+  align-items: center;
+  box-sizing: border-box;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(190,190,223,1) 0%, rgba(123,192,206,1) 75%);
+}
+h1{
+  font-family: 'Lucida Console', Courier, monospace;
+  text-align: center;
+  color: antiquewhite;
+  padding: 10px;
+  width: 100%;
+  font-size: 40px;
+}
+.btnc{
+  left: 45%;
+  align-items: center;
+  appearance: none;
+  background-color: white;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'JetBrains Mono',monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.btnc:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.btnc:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btnc:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+  
+  h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: sans-serif;
+  }
+  
+</style>
+
+<script>
+  function calc()
+    {
+      s1 = parseFloat(document.getElementById('s1').value);
+      s2 = parseFloat(document.getElementById('s2').value);
+      s3 = parseFloat(document.getElementById('s3').value);
+      s4 = parseFloat(document.getElementById('s4').value);
+      s5 = parseFloat(document.getElementById('s5').value);
+      s6 = parseFloat(document.getElementById('s6').value);
+      s7 = parseFloat(document.getElementById('s7').value);
+      s8 = parseFloat(document.getElementById('s8').value);
+      n = parseInt(document.getElementById('num').value);
+      var res;
+      res = ((s1+s2+s3+s4+s5+s6+s7+s8)/n);
+      window.alert('CGPA = '+res);
+    }
+</script>
+  
+</html>
+
+
+"
+          ></dangerous-html>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

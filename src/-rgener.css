@@ -1,0 +1,12 @@
+.-rgener-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.-rgener-div {
+  width: 1200px;
+  height: 1004px;
+}
